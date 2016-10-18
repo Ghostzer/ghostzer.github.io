@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ToDoListTrio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div id = "mainContener">
+    <h1>TO DO LIST</h1>
+    <input id="addTodoTxt" type="text" onKeyPress="if(event.keyCode == 13) addTodo()"></input> <!--onKeyPress sert à autoriser la validation de tâche avec la touche "Entrer"-->
+    <select id="priorite">
+      <option value="1">priorité 1</option>
+      <option value="2">priorité 2</option>
+      <option value="3">priorité 3</option>
+    </select>
+    <button id="addTodoBtn" type="button">Ajouter</button>
+
+    <ul id="liste">
+    </ul>
+
+    </div> <!-- balise fermante de blur -->
+
+    <div id="mainModal" class="modal">
+
+        <div id="contentModal" class="modal-content">
+            <input id="contentModalTxt" type="text"></input>
+            <input id="contentModalBtn" type="button" value="OK" ></input>
+            <span class="close">×</span>
+        </div>
+
+    </div>
+
+
+    <script>
+
+    var tmpTodo; // Creation d'une variable temporaire pour stocker les saisies effectuées au préalable
+
+var maListe = document.getElementById('liste'); // balise ul
+var maSaisie = document.getElementById('addTodoTxt'); // premier champ de saisie
+var maPriorite = document.getElementById('priorite'); // choix de la priorité
+var addTodoBtn = document.getElementById('addTodoBtn'); // bouton pour ajouter une tâche
+var pouet = document.getElementById('mainContener');
+var modal = document.getElementById('mainModal'); // fenêtre modale
+var span = document.getElementsByClassName("close")[0]; // bouton pour fermer la fenêtre d'édition
+span.onclick = function() { // fonction qui cache la fenêtre modale quand on appuie sur la croix
+    modal.style.display = "none"; // le display change en "none" la classe modale
+    mainContener.className = "";
+}
+
+var addTodo = function() { // fonction principale
+    var selectedPriority = maPriorite.options[maPriorite.selectedIndex].value;
+    var baliseLi = document.createElement("li"); // création de la balise li
+    var monTexte = document.createElement("span"); // création de la balise span pour stocker la tâche
+
+    if (selectedPriority == 1) {
+        baliseLi.className = "classe1";
+    } else if (selectedPriority == 2) {
+        baliseLi.className = "classe2";             // boucle de gestion de priorité
+    } else if (selectedPriority == 3) {
+        baliseLi.className = "classe3";
+    }
+
+    if (maSaisie.value == '') { // boucle pour vérification de saisie valide
+        alert("Veuillez saisir une phrase s'il vous plait !")
+    } else { // si la saisie est valide le code continue de fonctionner
+        monTexte.innerHTML = maSaisie.value;
+
+        var bouttonEdit = document.createElement("input"); // création du bouton edit avec ses propriétés
+        bouttonEdit.type = 'button';
+        bouttonEdit.id = 'editBtn';
+        bouttonEdit.value = 'EDIT';
+
+
+
+        bouttonEdit.onclick = function() { // fonction du bouton edit
+            modal.style.display = "block"; // le display change en "block" la classe modale pour afficher la fenêtre modale
+            var baliseLi = this.parentNode;
+            var span = baliseLi.firstChild;
+            tmpTodo = span;
+            contentModalTxt.value = span.innerText;
+            mainContener.className = "blur";
+
+
+        }
+
+        contentModalBtn.onclick = function() { // fonction pour le bouton de validation de la fenêtre modale
+            tmpTodo.innerHTML = contentModalTxt.value;
+            modal.style.display = "none"; // le display change en "none" la classe modale pour cacher la fenêtre modale
+            mainContener.className = "";
+        }
+
+
+        var bouttonSupp = document.createElement("input"); // création du bouton supprimer avec ses propriétés
+        bouttonSupp.addEventListener('click', effacer); // ajout d'un évènement pour le bouton supprimer qui pointe vers la fonction effacer
+        bouttonSupp.id = "delBtn";
+        bouttonSupp.type = 'button';
+        bouttonSupp.value = 'DEL';
+
+        maSaisie.value = ''; // sert à vider le premier champ de saisie après validation
+
+        maListe.appendChild(baliseLi);
+        baliseLi.appendChild(monTexte);
+        baliseLi.appendChild(bouttonEdit);
+        baliseLi.appendChild(bouttonSupp);
+    }
+}
+
+
+
+
+var effacer = function() { // fonction du bouton effacer
+
+    this.parentNode.remove();
+}
+
+addTodoBtn.addEventListener('click', addTodo);
+
+    </script>
+
+  </body>
+</html>

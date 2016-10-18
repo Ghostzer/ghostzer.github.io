@@ -1,0 +1,132 @@
+body {
+  background: linear-gradient(40deg, #1ABBB1, #36B8E9);
+  background-color: #5FCFF5;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 50pt;
+  border: 2px solid #303030;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.blur {
+  filter : blur(5px);
+}
+
+#priorite {
+  border-radius: 10px;
+  border: 0px;
+  padding-right : 20px;
+  background-color: #FFF;
+}
+
+/*
+span {
+  padding-left: 20px;
+  border-radius: 5px;
+}*/
+
+#delBtn {
+  color: red;
+  padding-left: 10px;
+  border-radius: 15px;
+  border: 0px;
+  padding: 10px;
+  background-color: #FFF;
+  margin: 0.3%;
+  border: 1px solid #303030;
+}
+
+#delBtn:hover {
+  background-color: #B3B3B3;
+    color: white;
+}
+
+#editBtn:hover {
+  background-color: #B3B3B3;
+  color: white;
+}
+
+#editBtn {
+  padding-left: 10px;
+  color:green;
+  border-radius: 15px;
+  border: 0px;
+  padding: 10px;
+  background-color: #FFF;
+  margin-left: 1%;
+  border: 1px solid #303030;
+
+}
+
+#editWindowText {
+  margin : auto 20% auto auto;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 10px solid #303030;
+    border-radius: 50px;
+    width: 35%;
+
+}
+
+#Saisie {
+  border-radius: 50px;
+  border: 0px;
+  padding: 10px;
+}
+
+#Boutton {
+  border-radius: 50px;
+  border: 0px;
+  padding: 10px;
+  background-color: #FFF;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.classe1 {
+  color :red;
+}
+
+.classe2 {
+  color :blue;
+}
+
+.classe3 {
+  color :green;
+}
