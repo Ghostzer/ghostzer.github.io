@@ -1,18 +1,17 @@
 body {
-  background: linear-gradient(40deg, #1ABBB1, #36B8E9);
-  background-color: #5FCFF5;
+  background-color: #69D8FA;
   text-align: center;
-  font-family: sans-serif;
-  padding-bottom: 35%;
+  font-family: 'Exo', sans-serif;
 }
 
 h1 {
   font-size: 50pt;
-  border: 2px solid #303030;
   width: 40%;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: white;
 }
 
 .blur {
@@ -21,15 +20,17 @@ h1 {
 
 #addTodoTxt {
   border: 0px;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
 }
 
 #priorite {
     border: 0px;
-    border-radius: 5px;
-    width: 130px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100px;
     overflow: hidden;
     background: #fafafa url("img/select.png") no-repeat 100% 50%;
     background-color: white;
@@ -49,64 +50,53 @@ h1 {
 }
 
 #priorite option:focus {
-    outline: none;
+    outline-color: #CFF7FF;
 }
 
 #addTodoBtn {
   border: 0px;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   padding: 9.5px;
   background-color: white;
-}
-
-/*
-span {
-  padding-left: 20px;
-  border-radius: 5px;
-}*/
-
-#delBtn {
-  border: 0px;
-  border-radius: 20px;
-  padding: 10px;
-  margin-bottom: 10px;
-  background-color: white;
-  /*color: red;
-  padding-left: 10px;
-  border-radius: 15px;
-  border: 0px;
-  padding: 10px;
-  background-color: #FFF;
-  margin: 0.3%;
-  border: 1px solid #303030;*/
-}
-
-#delBtn:hover {
-  background-color: #B3B3B3;
-    color: white;
-}
-
-#editBtn:hover {
-  background-color: #B3B3B3;
-  color: white;
+  cursor: pointer;
 }
 
 #editBtn {
   border: 0px;
-  border-radius: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   padding: 10px;
   margin-bottom: 10px;
   background-color: white;
-  padding-left: 10px;
-  color:green;
-  border-radius: 15px;
-  border: 0px;
-  padding: 10px;
-  background-color: #FFF;
-  margin-left: 1%;
-  border: 1px solid #303030;
-
+  margin-left: 50px;
+  cursor: pointer;
 }
+
+#delBtn {
+  border: 0px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+
+#addTodoBtn:hover {
+background-color: #CFF7FF;
+}
+
+#delBtn:hover {
+  background-color: #CFF7FF;
+}
+
+#editBtn:hover {
+  background-color: #CFF7FF;
+}
+
 
 #editWindowText {
   margin : auto 20% auto auto;
@@ -122,18 +112,38 @@ span {
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
-
 }
 
-
 .modal-content {
-    background-color: #fefefe;
+    background-color: #69D8FA;
     margin: auto;
     padding: 20px;
     border: 10px solid #303030;
     border-radius: 50px;
     width: 35%;
+}
 
+#contentModalTxt {
+  border: 0px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#contentModalBtn {
+  border: 0px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#contentModalBtn:hover {
+  background-color: #CFF7FF;
 }
 
 #Saisie {
@@ -150,7 +160,7 @@ span {
 }
 
 .close {
-    color: #aaaaaa;
+    color: #000;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -164,13 +174,14 @@ span {
 }
 
 .classe1 {
-  color :red;
+  color : #ED3232;
 }
 
 .classe2 {
-  color :blue;
+  color : #F29D00;
+
 }
 
 .classe3 {
-  color :green;
+  color : #35C700;
 }
