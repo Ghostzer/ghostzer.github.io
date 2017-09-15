@@ -81,39 +81,5 @@ p{
 }
 
 h1 {
-    font-size: 50px;
-}
-
-
-
-video {
-    -moz-transform: translateX(50%) translateY(50%);
-    -webkit-transform: translateX(50%) translateY(50%);
-    -ms-transform: translateX(50%) translateY(50%);
-    transform: translateX(50%) translateY(50%);
-    position: absolute;
-    bottom: 50%;
-    right: 50%;
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
-    overflow: hidden;
-    opacity: 0.5;
-    z-index: -1;
-}
-
-#section0 {
-    background-color: #1b1b1f;
-    color: #e9e9e9;
-    justify-content: center;
-    min-height: 35em;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-top: 0;
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-    z-index: 1;
+    font-size: 40px;
 }
