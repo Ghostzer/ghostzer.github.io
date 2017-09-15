@@ -1,18 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Ghostzer's page</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/jquery.fullPage.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.fullPage.js"></script>
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<script type="text/javascript">
+		$(document).ready(function() {
+		$('#fullpage').fullpage({
+		sectionsColor: ['#1b1b1f', '#1b1b1f'],
+		scrollingSpeed: 1000
+		});
+		});
 
-<head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <title>Under Construction</title>
-</head>
 
-<body>
 
-  <span>Under Construction</span> <br><br>
+		</script>
+	</head>
+	<body>
+		<div id="fullpage">
 
-<progress id="progress" value="15" max="100">15%</meter>
+			<div class="section active" id="section0">
+				<h1>Ghostzer's page</h1>
+				<p class="background">Développeur Junior qui s'essaye à tout type de langage. Titulaire d'un Titre Professionnel Developpeur Logiciel, toutes les pratiques de cette formation m'ont appris à utiliser les langages HTML/CSS/JS/Ajax, PHP (from scratch + Symfony), SQL, Java (Android compris). Mes expériences en entreprise m'ont permis d'utiliser d'autres technologies tel que Docker, Jquery, Gulp, Node, Oracle/PL-SQL ainsi qu'au framework Slim et le langage Delphi.</p>
+				<p class="background">A l'aise sous les systèmes Windows et Linux, mes expériences passés en tant que technicien informatique - ainsi que toute ma curiosité - me permettent d'avoir du recul, notamment sur la sécurité informatique.</p>
 
-</body>
+			</div>
 
+
+			<div class="section" id="section1">
+				<div class="slide">
+					<div class="intro">
+						<h1>Mes compétences/technologies utilisés :</h1>
+						<br><br>
+						<p>
+							<img class="sprites" id="html" title="HTML5" src="assets/sprites/html5.svg">
+							<img class="sprites" src="assets/sprites/css3.svg">
+							<img class="sprites" src="assets/sprites/javascript.svg">
+							<img class="sprites" src="assets/sprites/jquery.svg">
+							<img class="sprites" src="assets/sprites/bootstrap.svg">
+							<img class="sprites" src="assets/sprites/php.svg">
+							<img class="sprites" src="assets/sprites/doctrine.svg">
+							<img class="sprites" src="assets/sprites/java.svg">
+							<img class="sprites" src="assets/sprites/android.svg">
+							<img class="sprites" src="assets/sprites/docker.svg">
+							<img class="sprites" src="assets/sprites/gulp.svg">
+							<img class="sprites" src="assets/sprites/mysql.svg">
+							<img class="sprites" src="assets/sprites/apache.svg">
+							<img class="sprites" src="assets/sprites/nginx.svg">
+							<i title="HTML5" class="devicon-symfony-original"></i>
+							<img class="sprites" src="assets/sprites/oracle.svg">
+							<img class="sprites" src="assets/sprites/photoshop.svg">
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

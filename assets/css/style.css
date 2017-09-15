@@ -1,0 +1,119 @@
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+body{
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+
+h1{
+	font-size: 6em;
+	color: #EAEAEA;
+}
+p{
+	font-size: 2em;
+	color: #EAEAEA;
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.section{
+	text-align:center;
+}
+
+#github {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*align-items: center;*/
+}
+
+.sprites {
+    width: 80px;
+}
+
+.devicon-symfony-original {
+    font-size: 80px;
+}
+
+.background {
+    font-size: 22px;
+    padding: 0em 5em 0em 5em ;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+
+
+video {
+    -moz-transform: translateX(50%) translateY(50%);
+    -webkit-transform: translateX(50%) translateY(50%);
+    -ms-transform: translateX(50%) translateY(50%);
+    transform: translateX(50%) translateY(50%);
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#section0 {
+    background-color: #1b1b1f;
+    color: #e9e9e9;
+    justify-content: center;
+    min-height: 35em;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 0;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+}
