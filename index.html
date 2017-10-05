@@ -1,65 +1,73 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Ghostzer's home</title>
-		<link rel="stylesheet" type="text/css" href="assets/css/jquery.fullPage.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-		<script type="text/javascript" src="assets/js/jquery.fullPage.js"></script>
-		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<html>
 
-	</head>
-	<body>
-		<div id="fullpage">
+<head>
+    <title>Richard Lopez</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/git.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
-			<div class="section active" id="section0">
-				<h1>Richard Lopez</h1>
-				<p class="background">Développeur Junior qui s'essaye à tout type de langage. Titulaire d'un Titre Professionnel Développeur Logiciel, toutes les pratiques de cette formation m'ont appris à utiliser les langages HTML/CSS/JS/Ajax, PHP (from scratch + Symfony), SQL, Java (Android compris). Mes expériences en entreprise m'ont permis d'utiliser d'autres technologies telles que Docker, Jquery, Gulp, Oracle/PL-SQL, le framework Slim et le langage Delphi.</p>
-				<p class="background">A l'aise sous les systèmes Windows et Linux, mes expériences passées en tant que technicien informatique - ainsi que toute ma curiosité - me permettent d'avoir du recul, notamment sur la sécurité informatique.</p>
+    <script type="text/javascript">
+    $(function() {
+        $("#github").loadRepositories("Ghostzer");
+    });
+    </script>
 
-			</div>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+</head>
 
+<body>
+    <section class="header">
+        <video autoplay="" loop="">
+            <source src="assets/img/header.mp4" type="video/mp4">
+        </video>
+        <div>
+            <h1>Richard Lopez</h1>
+            <p>Développeur Junior qui s'essaye à tout type de langage. Titulaire d'un Titre Professionnel Développeur Logiciel, toutes les pratiques de cette formation m'ont appris à utiliser les langages HTML/CSS/JS/Ajax, PHP (from scratch + Symfony), SQL, Java (Android compris). Mes expériences en entreprise m'ont permis d'utiliser d'autres technologies telles que Docker, Jquery, Gulp, Oracle/PL-SQL, le framework Slim et le langage Delphi.</p>
 
-			<div class="section" id="section1">
-				<div class="slide">
-					<div class="intro">
-						<h1>Mes compétences/technologies utilisées :</h1>
-						<br><br>
-						<p>
-							<img class="sprites" id="html" title="HTML5" src="assets/sprites/html5.svg">
-							<img class="sprites" src="assets/sprites/css3.svg">
-							<img class="sprites" src="assets/sprites/javascript.svg">
-							<img class="sprites" src="assets/sprites/jquery.svg">
-							<img class="sprites" src="assets/sprites/bootstrap.svg">
-							<img class="sprites" src="assets/sprites/php.svg">
-							<img class="sprites" src="assets/sprites/doctrine.svg">
-							<img class="sprites" src="assets/sprites/java.svg">
-							<img class="sprites" src="assets/sprites/android.svg">
-							<img class="sprites" src="assets/sprites/docker.svg">
-							<img class="sprites" src="assets/sprites/gulp.svg">
-							<img class="sprites" src="assets/sprites/mysql.svg">
-							<img class="sprites" src="assets/sprites/apache.svg">
-							<img class="sprites" src="assets/sprites/nginx.svg">
-							<i title="HTML5" class="devicon-symfony-original"></i>
-							<img class="sprites" src="assets/sprites/oracle.svg">
-							<img class="sprites" src="assets/sprites/photoshop.svg">
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+            <h1>Mes compétences/technologies utilisées :</h1>
+            <p>
+                            <img class="sprites" src="assets/sprites/html5.svg">
+                            <img class="sprites" src="assets/sprites/css3.svg">
+                            <img class="sprites" src="assets/sprites/javascript.svg">
+                            <img class="sprites" src="assets/sprites/jquery.svg">
+                            <img class="sprites" src="assets/sprites/bootstrap.svg">
+                            <img class="sprites" src="assets/sprites/php.svg">
+                            <img class="sprites" src="assets/sprites/doctrine.svg">
+                            <img class="sprites" src="assets/sprites/java.svg">
+                            <img class="sprites" src="assets/sprites/android.svg">
+                            <img class="sprites" src="assets/sprites/docker.svg">
+                            <img class="sprites" src="assets/sprites/gulp.svg">
+                            <img class="sprites" src="assets/sprites/mysql.svg">
+                            <img class="sprites" src="assets/sprites/apache.svg">
+                            <img class="sprites" src="assets/sprites/nginx.svg">
+                            <i title="Symfony" class="devicon-symfony-original"></i>
+                            <img class="sprites" src="assets/sprites/oracle.svg">
+                            <img class="sprites" src="assets/sprites/photoshop.svg">
+                        </p>
+            <h1 id="voir_projets">Voir mes projets</h1>
+            <a href="#projets"><i class="fa fa-arrow-down fa-2x" aria-hidden="true" id="arrow"></i></a>
+        </div>
+    </section>
+    <h2 id="projets"></h2>
+    <div class="main" id=github>
+    </div>
 
-		<script type="text/javascript">
+</body>
 
-			$(document).ready(function() {
-				$('#fullpage').fullpage({
-					sectionsColor: ['#1b1b1f', '#1b1b1f'],
-					scrollingSpeed: 1000
-				});
-			});
-			
-		</script>
-	</body>
+<script type="text/javascript">
+$('a[href^="#"]').click(function() {
+    var scroll = $(this).attr("href");
+
+    $('html, body').animate({
+        scrollTop: $(scroll).offset().top
+    }, 'slow');
+    return false;
+});
+</script>
+
 </html>
