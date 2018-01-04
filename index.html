@@ -2,72 +2,47 @@
 <html>
 
 <head>
+
     <title>Richard Lopez</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Passion+One|Source+Sans+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
-    <script src="assets/js/git.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
-    <script type="text/javascript">
-    $(function() {
-        $("#github").loadRepositories("Ghostzer");
-    });
-    </script>
-
+     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <meta charset="UTF-8">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
 </head>
 
 <body>
-    <section class="header">
-        <video autoplay="" loop="">
-            <source src="assets/img/header.mp4" type="video/mp4">
-        </video>
-        <div>
-            <h1>Richard Lopez</h1>
-            <p>Développeur Junior qui s'essaye à tout type de langage. Titulaire d'un Titre Professionnel Développeur Logiciel, toutes les pratiques de cette formation m'ont appris à utiliser les langages HTML/CSS/JS/Ajax, PHP (from scratch + Symfony), SQL, Java (Android compris). Mes expériences en entreprise m'ont permis d'utiliser d'autres technologies telles que Docker, Jquery, Gulp, Oracle/PL-SQL, le framework Slim et le langage Delphi.</p>
 
-            <h1>Mes compétences/technologies utilisées :</h1>
-            <p>
-                            <img class="sprites" src="assets/sprites/html5.svg">
-                            <img class="sprites" src="assets/sprites/css3.svg">
-                            <img class="sprites" src="assets/sprites/javascript.svg">
-                            <img class="sprites" src="assets/sprites/jquery.svg">
-                            <img class="sprites" src="assets/sprites/bootstrap.svg">
-                            <img class="sprites" src="assets/sprites/php.svg">
-                            <img class="sprites" src="assets/sprites/doctrine.svg">
-                            <img class="sprites" src="assets/sprites/java.svg">
-                            <img class="sprites" src="assets/sprites/android.svg">
-                            <img class="sprites" src="assets/sprites/docker.svg">
-                            <img class="sprites" src="assets/sprites/gulp.svg">
-                            <img class="sprites" src="assets/sprites/mysql.svg">
-                            <img class="sprites" src="assets/sprites/apache.svg">
-                            <img class="sprites" src="assets/sprites/nginx.svg">
-                            <i title="Symfony" class="devicon-symfony-original"></i>
-                            <img class="sprites" src="assets/sprites/oracle.svg">
-                            <img class="sprites" src="assets/sprites/photoshop.svg">
-                        </p>
-            <h1 id="voir_projets">Voir mes projets</h1>
-            <a href="#projets"><i class="fa fa-arrow-down fa-2x" aria-hidden="true" id="arrow"></i></a>
-        </div>
-    </section>
-    <h2 id="projets"></h2>
-    <div class="main" id=github>
-    </div>
+	<div class="top-container">
+		<div class="top">
+			<div class="top-titre">Richard Lopez</div>
+
+			<div class="top-menu">
+				<div class="top-menu-item selected"><a class="link" href="/">Home</a></div>
+				<div class="top-menu-item"><a class="link" href="projects.html">Projects</a></div>
+				<div class="top-menu-item"><a class="link" href="cv.html">CV</a></div>
+			</div>
+		</div>
+	</div> <!-- top-container -->
+
+
+	<div class="main-container">
+		<div class="main">
+			
+			<div class="avatar"><img src="https://avatars1.githubusercontent.com/u/22911286?s=460&v=4"></div>
+
+			<div class="text-principal">
+				<div>Hello, my name is Richard Lopez, better known as Ghostzer.</div><br>
+				
+				<div>Developer and IT Technician, I like to develop software and website with HTML, CSS, JS, Ajax, Jquery, PHP, SQL, Java with Android, Delphi and C#. I also use framework like Symfony or Slim.</div><br>
+
+				<div>I like Photography and to play with the Raspberry Pi, I'm passionate by the IT Security and I practice motorcycle.</div><br>
+
+
+			</div>
+
+		</div>
+	
+	</div> <!-- main-container -->
 
 </body>
-
-<script type="text/javascript">
-$('a[href^="#"]').click(function() {
-    var scroll = $(this).attr("href");
-
-    $('html, body').animate({
-        scrollTop: $(scroll).offset().top
-    }, 'slow');
-    return false;
-});
-</script>
 
 </html>
