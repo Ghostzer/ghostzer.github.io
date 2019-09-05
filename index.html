@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
-
+<html lang=fr>
 <head>
-
-    <title>Richard Lopez</title>
-     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <meta charset="UTF-8">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Richard Lopez</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>	<script src="assets/js/lang.js"></script>
+	<script src="assets/js/jquery.translate.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 
 </head>
 
@@ -14,35 +19,68 @@
 	<div class="top-container">
 		<div class="top">
 			<div class="top-titre">Richard Lopez</div>
-
+			<div class="language top-menu-item">
+					<a class="btn btn-default lang_selector trn" href="#" role="button" data-value="fr"><img class="fit-picture" src="assets/imgs/fr.png" alt="En language"></a>
+					<a class="btn btn-default lang_selector trn" href="#" role="button" data-value="en"><img class="fit-picture" src="assets/imgs/en.png" alt="En language"></a>
+				</div>
 			<div class="top-menu">
-				<div class="top-menu-item selected"><a class="link" href="/">Home</a></div>
-				<div class="top-menu-item"><a class="link" href="projects.html">Projects</a></div>
-				<div class="top-menu-item"><a class="link" href="cv.html">CV</a></div>
+				
+				<div class="top-menu-item"><a class="link trn" id="home" href="#">Home</a></div>
+				<div class="top-menu-item"><a class="link trn" id="projects" href="#">Projects Git</a></div>
+				<div class="top-menu-item"><a class="link trn" id="resume" href="#">Resume</a></div>
 			</div>
 		</div>
 	</div> <!-- top-container -->
 
 
 	<div class="main-container">
-		<div class="main">
-			
-			<div class="avatar"><img src="https://avatars1.githubusercontent.com/u/22911286?s=460&v=4"></div>
+		<div class="main" id="main"><div>
 
-			<div class="text-principal">
-				<div>Hello, my name is Richard Lopez, better known as Ghostzer.</div><br>
-				
-				<div>Developer and IT Technician, I like to develop software and website with HTML, CSS, JS, Ajax, Jquery, PHP, SQL, Java with Android, Delphi and C#. I also use framework like Symfony or Slim.</div><br>
-
-				<div>I like Photography and to play with the Raspberry Pi, I'm passionate by the IT Security and I practice motorcycle.</div><br>
-
-
-			</div>
-
-		</div>
-	
 	</div> <!-- main-container -->
 
 </body>
+
+
+
+<script type="text/javascript">
+
+	$(document).ready(function(){
+
+		$('#home').addClass('selected');
+		$('#main').load('home.html');
+
+		$('#home').click(function() {
+
+			$('#main').load('home.html');
+
+			$(this).addClass('selected');
+			$('#projects').removeClass('selected');
+			$('#resume').removeClass('selected');
+
+		});
+
+		$('#projects').click(function() {
+
+			$('#main').load('projects.html');
+
+			$(this).addClass('selected');
+			$('#home').removeClass('selected');
+			$('#resume').removeClass('selected');
+
+		});
+
+		$('#resume').click(function() {
+
+			$('#main').load('resume.html');
+
+			$(this).addClass('selected');
+			$('#home').removeClass('selected');
+			$('#projects').removeClass('selected');
+
+		});
+
+	});
+
+</script>
 
 </html>
